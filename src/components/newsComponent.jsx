@@ -22,9 +22,10 @@ export class newsComponent extends Component {
   async componentDidMount() {
     // let url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=e721c7ca7eec485090d6da9937628401&pageSize=${this.state.pageSize}`;
     let url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=5f8e92875254409caf92bd62903e67c2&pageSize=${this.state.pageSize}`;
+
     let data = await fetch(url);
     let parsedData = await data.json();
-    console.log(parsedData);
+    // console.log(parsedData);
     this.setState({
       articles: parsedData.articles,
       totalResults: parsedData.totalResults,
@@ -38,6 +39,7 @@ export class newsComponent extends Component {
     let url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=5f8e92875254409caf92bd62903e67c2&pageSize=${
       this.state.pageSize
     }&page=${this.state.page - 1}`;
+
     let data = await fetch(url);
     let parsedData = await data.json();
     this.setState({
@@ -56,6 +58,7 @@ export class newsComponent extends Component {
     let url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=5f8e92875254409caf92bd62903e67c2&pageSize=${
       this.state.pageSize
     }&page=${this.state.page + 1}`;
+
     let data = await fetch(url);
     let parsedData = await data.json();
     this.setState({
@@ -101,12 +104,12 @@ export class newsComponent extends Component {
               );
             })}
           </div>
-          <div>
+          {/* <div>
             {console.log(
               "condition " + (this.state.remainingResults < this.state.pageSize)
             )}
             {console.log("remaining " + this.state.remainingResults)}
-          </div>
+          </div> */}
           <div className="flex w-full justify-between mt-10">
             <button
               type="button"

@@ -1,83 +1,138 @@
 import React, { Component } from "react";
 import { NewsItem } from "./components";
+import { defaultNewsImage } from "../assets/assets";
 
 export class newsComponent extends Component {
-  articles = [
-    {
-      source: {
-        id: "abc-news-au",
-        name: "ABC News (AU)",
-      },
-      author: null,
-      title:
-        "Australia Women v South Africa Women - South Africa Women in Australia 2024, 2nd ODI - Cricket Score Centre - ABC News",
-      description:
-        "Follow live cricket scores for Australia Women v South Africa Women. Stay updated on the latest match results in the South Africa Women in Australia 2024 with the ABC News Cricket Score Centre.",
-      url: "https://www.abc.net.au/news/sport/score-centre/cricket/2024-02-07/auw-saw/57500",
-      urlToImage:
-        "https://live-production.wcms.abc-cdn.net.au/1e2294b09eda2b20b970dc3516af67cb?impolicy=wcms_crop_resize&cropH=2512&cropW=4466&xPos=167&yPos=0&width=1200&height=675",
-      publishedAt: "2024-02-07T07:37:14.0155005Z",
-      content: null,
-    },
-    {
-      source: {
-        id: "espn-cric-info",
-        name: "ESPN Cric Info",
-      },
-      author: null,
-      title:
-        "PCB hands Umar Akmal three-year ban from all cricket | ESPNcricinfo.com",
-      description:
-        "Penalty after the batsman pleaded guilty to not reporting corrupt approaches | ESPNcricinfo.com",
-      url: "http://www.espncricinfo.com/story/_/id/29103103/pcb-hands-umar-akmal-three-year-ban-all-cricket",
-      urlToImage:
-        "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1099495_800x450.jpg",
-      publishedAt: "2020-04-27T11:41:47Z",
-      content:
-        "Umar Akmal's troubled cricket career has hit its biggest roadblock yet, with the PCB handing him a ban from all representative cricket for three years after he pleaded guilty of failing to report det… [+1506 chars]",
-    },
-    {
-      source: {
-        id: "espn-cric-info",
-        name: "ESPN Cric Info",
-      },
-      author: null,
-      title:
-        "What we learned from watching the 1992 World Cup final in full again | ESPNcricinfo.com",
-      description:
-        "Wides, lbw calls, swing - plenty of things were different in white-ball cricket back then | ESPNcricinfo.com",
-      url: "http://www.espncricinfo.com/story/_/id/28970907/learned-watching-1992-world-cup-final-full-again",
-      urlToImage:
-        "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg",
-      publishedAt: "2020-03-30T15:26:05Z",
-      content:
-        "Last week, we at ESPNcricinfo did something we have been thinking of doing for eight years now: pretend-live ball-by-ball commentary for a classic cricket match. We knew the result, yes, but we tried… [+6823 chars]",
-    },
-  ];
+  articles = [];
+
   constructor() {
     // This constructor function gets executed whenever there is a object that is being created from the parent class
-    super();
     // We can use the constructor to set the state of the objects
+    super();
     this.state = {
       articles: this.articles,
+      remainingResults: 0,
+      totalResults: 0,
+      pageSize: 6,
+      page: 1,
+      loading: false,
     };
   }
+
+  async componentDidMount() {
+    // let url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=e721c7ca7eec485090d6da9937628401&pageSize=${this.state.pageSize}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=5f8e92875254409caf92bd62903e67c2&pageSize=${this.state.pageSize}`;
+    let data = await fetch(url);
+    let parsedData = await data.json();
+    console.log(parsedData);
+    this.setState({
+      articles: parsedData.articles,
+      totalResults: parsedData.totalResults,
+      remainingResults: parsedData.totalResults,
+    });
+  }
+  prevButtonHandler = async () => {
+    // let url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=e721c7ca7eec485090d6da9937628401&pageSize=${
+    //   this.state.pageSize
+    // }&page=${this.state.page - 1}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=5f8e92875254409caf92bd62903e67c2&pageSize=${
+      this.state.pageSize
+    }&page=${this.state.page - 1}`;
+    let data = await fetch(url);
+    let parsedData = await data.json();
+    this.setState({
+      articles: parsedData.articles,
+      page: this.state.page - 1,
+      remainingResults: this.state.remainingResults + this.state.pageSize,
+    });
+    if (this.state.page <= 1) {
+    }
+  };
+
+  nextButtonHandler = async () => {
+    // let url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=e721c7ca7eec485090d6da9937628401&pageSize=${
+    //   this.state.pageSize
+    // }&page=${this.state.page + 1}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=5f8e92875254409caf92bd62903e67c2&pageSize=${
+      this.state.pageSize
+    }&page=${this.state.page + 1}`;
+    let data = await fetch(url);
+    let parsedData = await data.json();
+    this.setState({
+      articles: parsedData.articles,
+      page: this.state.page + 1,
+      remainingResults: this.state.remainingResults - this.state.pageSize,
+    });
+    if (this.state.remainingResults - this.state.pageSize <= 0) {
+    }
+  };
+
   render() {
     return (
       <section className="">
-        <div className="container px-5 py-24 mx-auto">
+        <div className="container px-5 py-5 mx-auto">
+          <div className="my-7">
+            <h1 className=" text-[40px] font-bold font-serif tracking-normal">
+              Headline Harbor - Top Headlines
+            </h1>
+          </div>
           <div className="flex flex-wrap -m-4">
             {this.state.articles.map((element) => {
               return (
                 <NewsItem
                   key={element.url}
-                  title={element.title}
-                  description="news of today"
-                  imageURL="https://live-production.wcms.abc-cdn.net.au/1e2294b09eda2b20b970dc3516af67cb?impolicy=wcms_crop_resize&cropH=2512&cropW=4466&xPos=167&yPos=0&width=1200&height=675"
-                  newsURL=""
+                  title={
+                    element.title === null
+                      ? "Latest Updates"
+                      : element.title.slice(0, 50) + " ..."
+                  }
+                  description={
+                    element.description === null
+                      ? "Explore in-depth coverage of local and global news, with analysis and insights to keep you up-to-date."
+                      : element.description.slice(0, 100) + " ..."
+                  }
+                  imageURL={
+                    element.urlToImage === null
+                      ? defaultNewsImage
+                      : element.urlToImage
+                  }
+                  newsURL={element.url}
                 />
               );
             })}
+          </div>
+          <div>
+            {console.log(
+              "condition " + (this.state.remainingResults < this.state.pageSize)
+            )}
+            {console.log("remaining " + this.state.remainingResults)}
+          </div>
+          <div className="flex w-full justify-between mt-10">
+            <button
+              type="button"
+              className={`px-3 py-2 rounded-md border-2 border-gray-700 text-white mx-12 ${
+                this.state.page <= 1 ? "invisible" : "bg-gray-700"
+              } ${this.state.page > 1 && "hover:bg-gray-800"}`}
+              disabled={this.state.page <= 1}
+              onClick={this.prevButtonHandler}
+            >
+              &larr; Previous
+            </button>
+            <button
+              type="button"
+              className={`px-3 py-2 rounded-md border-2 border-gray-700 text-white mx-12 ${
+                this.state.remainingResults - this.state.pageSize <= 0
+                  ? "invisible"
+                  : "bg-gray-700"
+              } ${
+                this.state.remainingResults - this.state.pageSize > 0 &&
+                "hover:bg-gray-800"
+              }`}
+              disabled={this.state.remainingResults - this.state.pageSize <= 0}
+              onClick={this.nextButtonHandler}
+            >
+              Next &rarr;
+            </button>
           </div>
         </div>
       </section>

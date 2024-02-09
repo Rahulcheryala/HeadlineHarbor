@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export class newItem extends Component {
   render() {
     let { title, description, imageURL, newsURL } = this.props;
     return (
-      <div className="p-4 md:w-1/3">
+      <div className="p-4 w-1/3 max-[1000px]:w-1/2 max-sm:w-full">
         <div className="h-full border-2 border-gray-300 rounded-lg overflow-hidden">
           <img
             className="lg:h-48 md:h-36 w-full object-cover object-center"
@@ -17,7 +18,11 @@ export class newItem extends Component {
             </h1>
             <p className="leading-relaxed mb-3">{description}</p>
             <div className="flex items-center flex-wrap ">
-              <a className="text-indigo-400 inline-flex items-center md:mb-2 lg:mb-0">
+              <Link
+                className="text-indigo-400 inline-flex items-center md:mb-2 lg:mb-0"
+                to={newsURL}
+                target="_blank"
+              >
                 Read More
                 <svg
                   className="w-4 h-4 ml-2"
@@ -31,7 +36,7 @@ export class newItem extends Component {
                   <path d="M5 12h14"></path>
                   <path d="M12 5l7 7-7 7"></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

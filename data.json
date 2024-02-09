@@ -1,0 +1,17 @@
+{
+  "articles": [
+    {
+      "source": {
+        "id": "cbs-news",
+        "name": "CBS News"
+      },
+      "author": "CBS News",
+      "title": "How one young athlete overcame a stroke to pursue her sports dream",
+      "description": "Kylie Lough, an 18-year-old athlete, faced a harrowing challenge when a stroke, triggered by a previously undiagnosed congenital condition, left her unable to walk for days. Against all odds, her unwavering determination has her back in the game.",
+      "url": "https://www.cbsnews.com/video/how-one-young-athlete-overcame-a-stroke-to-pursue-her-sports-dream/",
+      "urlToImage": "https://assets2.cbsnewsstatic.com/hub/i/r/2024/02/07/07c888b1-072d-4a0b-9275-f1db487eaffc/thumbnail/1200x630/eb4b055661fd8fbd2636ca37271467b9/0207-cmo-strokesurvivor-chen-2662029-640x360.jpg?v=09f617bc45cf30bf4fa8525d3acea178",
+      "publishedAt": "2024-02-07T15:03:40+00:00",
+      "content": "Watch CBS News\r\nCopyright ©2024 CBS Interactive Inc. All rights reserved.\r\nGet browser notifications for breaking news, live events, and exclusive reporting.\r\nNot NowTurn On"
+    }
+  ]
+}

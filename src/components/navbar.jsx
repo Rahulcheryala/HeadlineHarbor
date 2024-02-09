@@ -29,7 +29,7 @@ export class navbar extends Component {
             {navLinks.map((element) => {
               return (
                 <Link
-                  className="mr-5 hover:text-gray-900"
+                  className="mr-3 py-2 px-2 border-2 border-transparent rounded-lg hover:text-indigo-500 hover:border-2 hover:rounded-md hover:border-indigo-500 font-semibold active:text-indigo-700"
                   key={element.label}
                   to={element.href}
                 >

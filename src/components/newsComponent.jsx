@@ -36,15 +36,19 @@ export class newsComponent extends Component {
   }
 
   async componentDidMount() {
-    // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=e721c7ca7eec485090d6da9937628401&pageSize=${this.state.pageSize}`;
-    // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=5f8e92875254409caf92bd62903e67c2&pageSize=${this.state.pageSize}`;
-    // this.setState({ loading: true });
-    // let data = await fetch(url);
-    // let parsedData = await data.json();
+    this.props.setProgress(10);
+    // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.APIkey}&pageSize=${this.state.pageSize}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.APIkey}&pageSize=${this.state.pageSize}`;
+    this.props.setProgress(30);
+    this.setState({ loading: true });
+    this.props.setProgress(50);
+    let data = await fetch(url);
+    this.props.setProgress(70);
+    let parsedData = await data.json();
+    this.props.setProgress(90);
 
     // console.log(parsedData);
-
-    let parsedData = Data;
+    // let parsedData = Data;
 
     this.setState({
       articles: parsedData.articles,
@@ -52,25 +56,28 @@ export class newsComponent extends Component {
       remainingResults: parsedData.totalResults,
       loading: false,
     });
+    this.props.setProgress(100);
   }
   nextButtonHandler = async () => {
+    this.props.setProgress(10);
     // let url = `https://newsapi.org/v2/top-headlines?country=${
     //   this.props.country
     // }&category=${
     //   this.props.category
-    // }&apiKey=e721c7ca7eec485090d6da9937628401&pageSize=${
+    // }&apiKey=${this.props.APIkey}&pageSize=${
     //   this.state.pageSize
     // }&page=${this.state.page + 1}`;
-    // let url = `https://newsapi.org/v2/top-headlines?country=${
-    //   this.props.country
-    // }&category=${
-    //   this.props.category
-    // }&apiKey=5f8e92875254409caf92bd62903e67c2&pageSize=${
-    //   this.state.pageSize
-    // }&page=${this.state.page + 1}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=${
+      this.props.country
+    }&category=${this.props.category}&apiKey=${this.props.APIkey}&pageSize=${
+      this.state.pageSize
+    }&page=${this.state.page + 1}`;
+    this.props.setProgress(30);
     this.setState({ loading: true });
+    this.props.setProgress(50);
     let data = await fetch(url);
     let parsedData = await data.json();
+    this.props.setProgress(70);
 
     this.setState({
       articles: parsedData.articles,
@@ -78,22 +85,21 @@ export class newsComponent extends Component {
       remainingResults: this.state.remainingResults - this.state.pageSize,
       loading: false,
     });
+    this.props.setProgress(100);
   };
   prevButtonHandler = async () => {
     // let url = `https://newsapi.org/v2/top-headlines?country=${
     //   this.props.country
     // }&category=${
     //   this.props.category
-    // }&apiKey=e721c7ca7eec485090d6da9937628401&pageSize=${
+    // }&apiKey=${this.props.APIkey}&pageSize=${
     //   this.state.pageSize
     // }&page=${this.state.page - 1}`;
-    // let url = `https://newsapi.org/v2/top-headlines?country=${
-    //   this.props.country
-    // }&category=${
-    //   this.props.category
-    // }&apiKey=5f8e92875254409caf92bd62903e67c2&pageSize=${
-    //   this.state.pageSize
-    // }&page=${this.state.page - 1}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=${
+      this.props.country
+    }&category=${this.props.category}&apiKey=${this.props.APIkey}&pageSize=${
+      this.state.pageSize
+    }&page=${this.state.page - 1}`;
     this.setState({ loading: true });
     let data = await fetch(url);
     let parsedData = await data.json();
@@ -108,13 +114,15 @@ export class newsComponent extends Component {
 
   render() {
     return (
-      <section className="">
-        <div className="container px-5 py-5 mx-auto">
-          <div className="my-7">
-            <h1 className=" text-[40px] font-bold font-serif tracking-normal">
-              Headline Harbor -{" "}
-              {this.capitalizeFirstLetter(this.props.category)} Headlines
-            </h1>
+      <section className="py-20">
+        <div className="max-[450px]:px-12 px-24 py-5 mx-auto">
+          <div className="my-7 max-md:flex">
+            <div className="lg:text-[40px] max-lg:text-[30px] max-[786px]:text-[27px] max-md:text-[25px] max-[690px]:text-[22px] max-sm:text-[30px] max-[500px]:text-[25px] max-[450px]:text-[23px] font-bold font-serif tracking-normal sm:flex">
+              <h1 className=" max-sm:w-full me-2">Headline Harbor - </h1>
+              <h1 className=" max-sm:w-full">
+                {this.capitalizeFirstLetter(this.props.category)} Headlines
+              </h1>
+            </div>
           </div>
           <div className="flex flex-wrap -m-4">
             {this.state.loading && <Loader />}

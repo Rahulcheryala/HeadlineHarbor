@@ -1,7 +1,267 @@
 {
   "status": "ok",
-  "totalResults": 70,
+  "totalResults": 40,
   "articles": [
+    {
+      "source": {
+        "id": null,
+        "name": "CNBCTV18"
+      },
+      "author": "Mangalam Maloo",
+      "title": "",
+      "description": "BAT had earlier highlighted to analysts in December last year that they are open to paring stake in ITC.",
+      "url": "https://www.cnbctv18.com/market/itc-share-price-bat-largest-shareholder-monetising-stake-value-cigarette-hotels-19005881.htm",
+      "urlToImage": "https://images.cnbctv18.com/wp-content/uploads/2023/08/ITC-shutterstockk-1019x573.jpg",
+      "publishedAt": "2024-02-08T07:33:08Z",
+      "content": "Let's Connect with CNBCTV 18\r\n©TV18 Broadcast Limited. All rights reserved."
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Moneycontrol"
+      },
+      "author": "Moneycontrol News",
+      "title": "SBI likely to sell shares in Yes Bank via block deal - Moneycontrol",
+      "description": "The SBI Board is expected to discuss the sale of shares in Yes Bank soon, with the proceeds being used to boost balance sheet liquidity.",
+      "url": "https://www.moneycontrol.com/news/business/markets/sbi-likely-to-sell-shares-in-yes-bank-via-block-deal-12220821.html",
+      "urlToImage": "https://images.moneycontrol.com/static-mcnews/2023/07/Yes-bank-770x431.jpg",
+      "publishedAt": "2024-02-08T07:07:20Z",
+      "content": "State Bank of India is likely to sell its entire stake in Yes Bank, with a block deal being the preferred mode of sale. The bank may look to sell Yes Bank shares worth Rs 5000-7000 crore via the bloc… [+2074 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Livemint"
+      },
+      "author": "Sangeeta Ojha",
+      "title": "FD rate hike: Axis Bank increases interest rates on fixed deposits. Details here | Mint - Mint",
+      "description": "FD rate hike: Axis Bank offers FD rates of 3.50-7.85% p.a. to senior citizens on tenures ranging from 7 days to 10 years, effective from 5 February 2024",
+      "url": "https://www.livemint.com/money/personal-finance/fd-rate-hike-axis-bank-increases-interest-rates-on-fixed-deposits-details-here-11707294152789.html",
+      "urlToImage": "https://www.livemint.com/lm-img/img/2024/02/07/1600x900/Axis_Bank_hikes_FD_rates_1707297117004_1707297117206.JPG",
+      "publishedAt": "2024-02-08T07:07:17Z",
+      "content": "FD rate hike: Axis Bank has hiked the fixed deposit interest rates for amounts below 2 crore. The new FD rate is effective from 5 February 2024. Earlier, the bank had revised interest rates on term d… [+2435 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Hindustan Times"
+      },
+      "author": "HT News Desk",
+      "title": "RBI on clampdown against Paytm Payments Bank: ‘Persistent non-compliance’ - Hindustan Times",
+      "description": "The Reserve Bank of India on Thursday said the action against Paytm was taken due to ‘persisted non-compliance’.",
+      "url": "https://www.hindustantimes.com/business/rbi-governor-on-action-against-paytm-we-give-sufficient-time-101707375675956.html",
+      "urlToImage": "https://www.hindustantimes.com/ht-img/img/2024/02/08/1600x900/vijay_shekhar_1707048679041_1707375893666.jpg",
+      "publishedAt": "2024-02-08T07:06:18Z",
+      "content": "The Reserve Bank of India on Thursday said the action against Paytm was taken due to the fintech firm's persisted non-compliance.\r\nVijay Shekhar Sharma, founder and chairman of One97 Communications L… [+1949 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Dsij.in"
+      },
+      "author": "Kiran Shroff",
+      "title": "Shankar Sharma's portfolio stock & FIIs bought 1,67000 shares: This micro-cap drone manufacturing company bags new order from Vimaan Aerospace Pvt Ltd – details inside! - Dalal Street Investment Journal",
+      "description": "The stock is up by 68 per cent from its 52-week low of Rs 111.15 per share.",
+      "url": "https://www.dsij.in/dsijarticledetail/shankar-sharmas-portfolio-stock-fiis-bought-167000-shares-this-micro-cap-drone-manufacturing-company-bags-new-order-from-vimaan-aerospace-pvt-ltd-details-inside-36352",
+      "urlToImage": "https://www.dsij.in/Portals/0/EasyDNNnews/36352/DRONE-STOCKS-800X4001.jpg",
+      "publishedAt": "2024-02-08T06:37:13Z",
+      "content": "The stock is up by 68 per cent from its 52-week low of Rs 111.15 per share. \r\nDroneAcharya Aerial Innovations Limited, India’s first listed integrated Drone solution provider, proudly announces its i… [+3398 chars]"
+    },
+    {
+      "source": {
+        "id": "the-times-of-india",
+        "name": "The Times of India"
+      },
+      "author": "Smriti Jain",
+      "title": "RBI MPC meeting: Why repo rate was kept unchanged at 6.5% - RBI governor Shaktikanta Das explains - IndiaTimes",
+      "description": "India Business News: Find out why the repo rate was kept unchanged at 6.5% in the RBI MPC meeting. RBI governor Shaktikanta Das explains the reasons behind the decision and discusses the impact on the Indian economy.",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/rbi-mpc-meeting-why-repo-rate-was-kept-unchanged-at-65-rbi-governor-shaktikanta-das-explains/articleshow/107515023.cms",
+      "urlToImage": "https://static.toiimg.com/thumb/msid-107515422,width-1070,height-580,imgsize-74380,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "publishedAt": "2024-02-08T06:24:00Z",
+      "content": "FD Calculator\r\nWhen investing in a fixed deposit, the amount you deposit earns interest as per the prevailing...\r\nCalculate Now"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "NDTV News"
+      },
+      "author": null,
+      "title": "China Woman Earns Rs 120 Crore A Week With 3-Second Reviews - NDTV",
+      "description": "Millions around the world create online videos daily and post them on YouTube or social media platforms like Instagram and Facebook, hoping to gainviews and followers.",
+      "url": "https://www.ndtv.com/world-news/china-woman-zheng-xiang-xiang-earns-rs-120-crore-a-week-by-reviewing-products-for-3-seconds-5016924",
+      "urlToImage": "https://c.ndtvimg.com/2024-02/id4ra7r8_china-influencer-_625x300_08_February_24.jpeg?ver-20240117.06",
+      "publishedAt": "2024-02-08T06:21:24Z",
+      "content": "This Chinese social media influencer has revolutionised online product promotion.\r\nMillions around the world create online videos daily and post them on YouTube or social media platforms like Instagr… [+1838 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Bar & Bench - Indian Legal News"
+      },
+      "author": "Neha Joshi",
+      "title": "Another service provider moves NCLT Bengaluru for insolvency proceedings against Byju's - Bar & Bench - Indian Legal News",
+      "description": "The National Law Company Tribunal (NCLT) at Bengaluru on Wednesday issued notice on a petition filed by a Business Process Outsourcing (BPO) entity called Telep",
+      "url": "https://www.barandbench.com/news/service-provider-moves-nclt-bengaluru-insolvency-proceedings-byjus",
+      "urlToImage": "https://media.assettype.com/barandbench%2F2023-07%2Fafecdad9-c223-434b-a874-532591ed6a94%2F21.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+      "publishedAt": "2024-02-08T05:48:43Z",
+      "content": "Teleperformance, an operational creditor of Byju's, is the Indian unit of a French multinational company. \r\nThe petition filed through King Stubb &amp; Kasiva on November 4, 2023 stated that the part… [+297 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Hindustan Times"
+      },
+      "author": "HT News Desk",
+      "title": "What RBI governor said on digital transactions, Aadhaar-enabled payment system? - Hindustan Times",
+      "description": "RBI MPC Meet 2024: Das said that the bank prioritised the security of digital payments, in particular the need for additional factor of authentication",
+      "url": "https://www.hindustantimes.com/business/rbi-mpc-meet-2024-live-updates-governor-shaktikanta-das-said-on-digital-transactions-aadhaar-enabled-payment-system-101707370119844.html",
+      "urlToImage": "https://www.hindustantimes.com/ht-img/img/2024/02/08/1600x900/Shaktikanta_Das_1707370372931_1707370373217.png",
+      "publishedAt": "2024-02-08T05:46:22Z",
+      "content": "Reserve Bank of India governor Shaktikanta Das on Thursday announced that the central bank will issue guidelines for a principle-based framework for authentication of digital payment transactions. \r\n… [+2011 chars]"
+    },
+    {
+      "source": {
+        "id": "the-times-of-india",
+        "name": "The Times of India"
+      },
+      "author": "TOI Business Desk",
+      "title": "Loan borrowers take note! Now, know all-inclusive interest cost for your loan, RBI announces new measures - IndiaTimes",
+      "description": "India Business News: The Reserve Bank of India (RBI) is introducing new measures to enhance transparency in the annualised interest rates paid by loan borrowers. Find out more about the RBI's initiatives and how they can benefit you.",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/rbi-policy-new-loan-rules-annualised-interest-rate-shaktikanta-das-loan-fees-processing-charges/articleshow/107512938.cms",
+      "urlToImage": "https://static.toiimg.com/thumb/msid-107513359,width-1070,height-580,imgsize-63500,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "publishedAt": "2024-02-08T05:29:00Z",
+      "content": "FD Calculator\r\nWhen investing in a fixed deposit, the amount you deposit earns interest as per the prevailing...\r\nCalculate Now"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "NDTV News"
+      },
+      "author": null,
+      "title": "\"Inhumane\": Anupam Mittal Slams IndiGo, Airline Issues Apology - NDTV",
+      "description": "The Shark Tank India judge shared that two flights faced significant delays.",
+      "url": "https://www.ndtv.com/feature/inhumane-anupam-mittal-slams-indigo-airline-issues-apology-5016580",
+      "urlToImage": "https://c.ndtvimg.com/2024-02/pfm3isfg_anupam-mittal_625x300_08_February_24.jpeg?ver-20240117.06",
+      "publishedAt": "2024-02-08T04:45:01Z",
+      "content": "Budget carrier IndiGo is currently grappling with a surge in passenger complaints and public outcry.\r\nShaadi.com CEO Anupam Mittal recently took to social media and slammed IndiGo for its \"inhumane\" … [+1924 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Livemint"
+      },
+      "author": "Lata Jha",
+      "title": "Disney+ Hotstar sees marginal increase in paid subscribers in Q1 | Mint - Mint",
+      "description": "Disney announced a strategic $1.5 billion investment in Epic Games, signalling a deep dive into the gaming industry",
+      "url": "https://www.livemint.com/companies/company-results/disney-hotstar-sees-marginal-increase-in-paid-subscribers-in-q1-11707363826814.html",
+      "urlToImage": "https://www.livemint.com/lm-img/img/2024/02/08/1600x900/FILES-US-MEDIA-EARNINGS-DISNEY-0_1707365353052_1707365369152.jpg",
+      "publishedAt": "2024-02-08T04:15:14Z",
+      "content": "New Delhi: Disney+ Hotstar, the video streaming service owned by the Walt Disney Co, reported an uptick in its paid subscriber count, the first ever since the platform experienced a setback with the … [+3270 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Livemint"
+      },
+      "author": "Asit Manohar",
+      "title": "LIC share price hits record high ahead of Q3 results today. Buy, hold or book profit? | Mint - Mint",
+      "description": "LIC share price today ascended to a new peak of  ₹1,100 apiece on NSE",
+      "url": "https://www.livemint.com/market/stock-market-news/lic-share-price-hits-record-high-ahead-of-q3-results-today-buy-hold-or-book-profit-11707364442300.html",
+      "urlToImage": "https://www.livemint.com/lm-img/img/2024/02/08/1600x900/LIC_share_price_Q3_results_today_Stock_market_news_1707365552150_1707365552407.JPG",
+      "publishedAt": "2024-02-08T03:58:52Z",
+      "content": "Stock market today: Ahead of the announcement of Q3 results today for the current financial year, shares of the Life Insurance Corporation (LIC) climbed to a new peak during morning deals. LIC share … [+2259 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Etnownews.com"
+      },
+      "author": "ET Now Digital",
+      "title": "ITC dividend 2024 record date today; check amount and payment details - ET Now",
+      "description": "ITC Dividend 2024 Record Date, ITC Dividend Payment Date: ITC’s stock has an annual dividend yield of 3.01 per cent and its shares previously closed at Rs 431.40 apiece on the BSE.",
+      "url": "https://www.etnownews.com/markets/itc-dividend-2024-record-date-today-check-amount-and-payment-details-article-107507931",
+      "urlToImage": "https://etstatic.tnn.in/thumb/msid-107507931,width-1280,height-720,resizemode-75/107507931.jpg",
+      "publishedAt": "2024-02-08T03:33:45Z",
+      "content": "ITC reported a 6 per cent increase in its consolidated net profit, reaching Rs 5,335 crore for the quarter ending in December.(Pic: Shutterstock/ET NOW News)"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Moneycontrol"
+      },
+      "author": "Moneycontrol News",
+      "title": "HDFC Bank stock call: Buy, as UBS sees margin, asset quality improving, market share rising - Moneycontrol",
+      "description": "UBS has assigned a 'buy' rating to the HDFC Bank stock with a target price of Rs 1,900 per share, implying an upside of 33 percent from the last closing price of Rs 1,430",
+      "url": "https://www.moneycontrol.com/news/business/stocks/hdfc-bank-stock-call-buy-as-ubs-sees-margin-asset-quality-improving-market-share-rising-12217611.html",
+      "urlToImage": "https://images.moneycontrol.com/static-mcnews/2023/10/HDFC-BANK-770x431.jpg",
+      "publishedAt": "2024-02-08T03:06:01Z",
+      "content": "Brokerage firm UBS has assigned a 'buy' rating to the HDFC Bank stock with a target price of Rs 1,900 per share, citing improvement in asset quality and margins and gains in market share. The target … [+1717 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Livemint"
+      },
+      "author": "Dhanya Nagasundaram",
+      "title": "Buy or sell: Osho Krishan of Angel One recommends buying KEI Industries and Havells India stock today | Mint - Mint",
+      "description": "Buy or sell stocks: Osho Krishan has recommended two stocks to buy today - KEI Industries and Havells India",
+      "url": "https://www.livemint.com/market/stock-market-news/buy-or-sell-osho-krishan-of-angel-one-recommends-buying-kei-industries-and-havells-india-stock-today-11707324699018.html",
+      "urlToImage": "https://www.livemint.com/lm-img/img/2024/02/07/1600x900/Bull_vs_bear_iStock_1658452654594_1707328146037.JPG",
+      "publishedAt": "2024-02-08T02:48:14Z",
+      "content": "Stock Market News: Domestic equity benchmark indices, the Sensex and the Nifty 50, ended Wednesday's session flat. All sectors finished in green except for IT. The PSU Bank and Realty sectors both wi… [+4782 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Hindustan Times"
+      },
+      "author": "Bloomberg",
+      "title": "Gautam Adani's net worth hits $100 billion again, highest since Hindenburg allegations - Hindustan Times",
+      "description": "The industrialist is now the 12th richest person in the world, just one spot behind Mukesh Ambani.",
+      "url": "https://www.hindustantimes.com/business/gautam-adanis-net-worth-hits-100-billion-again-highest-since-hindenburg-allegation-101707359393111.html",
+      "urlToImage": "https://www.hindustantimes.com/ht-img/img/2024/02/08/1600x900/ADANI-INDIA-OCCRP-1_1693447313669_1707359590055.JPG",
+      "publishedAt": "2024-02-08T02:38:42Z",
+      "content": "It took Gautam Adani one year to return to the elite club of people with fortunes above $100 billion.\r\nIndian billionaire Gautam Adani. Reuters/File Photo\r\nThe Indian mogul has regained much of his w… [+2675 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "GaadiWaadi.com"
+      },
+      "author": "Team GaadiWaadi",
+      "title": "Maruti Suzuki Fronx Turbo Velocity Edition Launched, Benefits Up To Rs. 83K - GaadiWaadi.com",
+      "description": "2024 Maruti Suzuki Fronx Turbo Velocity Edition Launched; Gets added accessories worth Rs. 43,000; massive discounts on MY 2023 Fronx Turbo",
+      "url": "https://gaadiwaadi.com/maruti-suzuki-fronx-turbo-velocity-edition-launched-benefits-up-to-rs-83k/",
+      "urlToImage": "https://gaadiwaadi.com/wp-content/uploads/2024/02/2024-Maruti-Suzuki-Fronx-Turbo-Velocity-Edition-Launched-1.jpg",
+      "publishedAt": "2024-02-08T02:26:15Z",
+      "content": "Maruti Suzuki India Limited (MSIL) recently achieved the 1 lakh sales milestone of the Fronx within a short period of just 10 months. In order to keep the momentum going, the Fronx Turbo Velocity Edi… [+2108 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Livemint"
+      },
+      "author": "Ankit Gohel",
+      "title": "Indian stock market: 6 key things that changed for market overnight - Gift Nifty, S&P’s record close to oil prices | Mint - Mint",
+      "description": "Indian stock market: Markets will closely monitor the RBI’s commentary on any hints regarding potential rate cuts and improvements in liquidity.",
+      "url": "https://www.livemint.com/market/stock-market-news/indian-stock-market-6-key-things-that-changed-for-market-overnight-gift-nifty-s-p-s-record-close-to-oil-prices-11707354815802.html",
+      "urlToImage": "https://www.livemint.com/lm-img/img/2024/02/08/1600x900/GLOBAL-MARKETS--1_1633448045529_1707355509076.JPG",
+      "publishedAt": "2024-02-08T01:31:16Z",
+      "content": "The Indian stock market indices, Sensex and Nifty 50, are likely to remain volatile on Thursday ahead of the announcement of Reserve Bank of Indias (RBI) monetary policy and amid mixed global market … [+4606 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Livemint"
+      },
+      "author": "Livemint",
+      "title": "Stock Market Today: Delta Corp, SAIL, UPL, among 10 stocks under F&O ban list today | Mint - Mint",
+      "description": "F&O ban list: Ashok Leyland, Balrampur Chini Mills, Delta Corp, Hindustan Copper, India Cements, Indus Towers, National Aluminium, SAIL, UPL, and ZEEL are the 10 stocks that are part of the F&O ban list by the stock market exchange for February 8",
+      "url": "https://www.livemint.com/market/stock-market-news/stock-market-today-delta-corp-sail-upl-among-10-stocks-under-f-o-ban-list-today-11707323656375.html",
+      "urlToImage": "https://www.livemint.com/lm-img/img/2024/02/07/1600x900/927f3c5a-b859-11e9-8687-f85b347b35b1_1565116031486_1707323762707.jpg",
+      "publishedAt": "2024-02-08T01:27:01Z",
+      "content": "F&amp;O ban list: A total of ten stocks have been put under the ban for trade on Thursday, February 08, 2024, under the futures and options (F&amp;O) segment by the National Stock Exchange (NSE). The… [+2333 chars]"
+    },
     {
       "source": {
         "id": null,

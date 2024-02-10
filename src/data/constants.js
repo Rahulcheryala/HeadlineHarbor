@@ -1,4 +1,5 @@
 import Data from "./data.json";
+import Articles from "./articles.json";
 
 export const navLinks = [
   { href: "/home", label: "Home" },
@@ -10,4 +11,4 @@ export const navLinks = [
   { href: "/entertainment", label: "Entertainment" },
 ];
 
-export { Data };
+export { Data, Articles };

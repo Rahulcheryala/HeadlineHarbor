@@ -5,7 +5,6 @@ import {
   Routes,
   Route,
   Navigate,
-  Link,
 } from "react-router-dom";
 import {
   InfiniteNewsComponent,

@@ -1,15 +1,22 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { navLinks } from "../data/constants";
-import { Hamburger } from "../assets/assets";
+import { Hamburger } from "../assets/icons/icons";
+import { navIcon } from "../assets/images/images";
 
 export class navbar extends Component {
   state = {
     isOpen: false,
+    activeNavLink: "home",
   };
   toggleMenu = () => {
     let newState = !this.state.isOpen;
     this.setState({ isOpen: newState });
+  };
+  handleNavLinkClick = (navId, navLink) => {
+    this.setState({ activeNavLink: navId });
+    this.toggleMenu();
+    return <Navigate to={navLink} />;
   };
   render() {
     return (
@@ -19,18 +26,13 @@ export class navbar extends Component {
             className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
             to="/"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
+            <img
+              src={navIcon}
+              alt="HH"
+              width={30}
+              height={30}
+              className="border-2 border-indigo-500 rounded-lg p-1 hover:border-indigo-500"
+            />
             <span className="ml-3 text-xl font-bold">HeadlineHarbor</span>
           </Link>
 
@@ -54,7 +56,9 @@ export class navbar extends Component {
                       <Link
                         to={element.to}
                         className={`block text-black text-lg py-2 hover:text-black border-b-[1px] border-white`}
-                        // onClick={() => handleNavLinkClick(item.id)}
+                        onClick={() =>
+                          this.handleNavLinkClick(element.id, element.to)
+                        }
                       >
                         {element.label}
                       </Link>
@@ -74,14 +78,6 @@ export class navbar extends Component {
                       <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
                   </button>
-                  {/* <li>
-                    <Link
-                      to={"/"}
-                      className="block text-black text-lg py-2 hover:bg-orange-500 hover:text-black border-b-[1px] border-white"
-                    >
-                      Sign In
-                    </Link>
-                  </li> */}
                 </ul>
               )}
             </div>
@@ -92,7 +88,7 @@ export class navbar extends Component {
                   <Link
                     className="mr-3 py-2 px-2 border-2 border-transparent rounded-lg hover:text-indigo-500 hover:border-2 hover:rounded-md hover:border-indigo-500 font-semibold active:text-indigo-700"
                     key={element.label}
-                    to={element.href}
+                    to={element.to}
                   >
                     {element.label}
                   </Link>

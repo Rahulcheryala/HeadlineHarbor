@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { defaultNewsImage } from "../assets/assets";
+import { defaultNewsImage } from "../assets/images/images";
 
 export class newItem extends Component {
   render() {

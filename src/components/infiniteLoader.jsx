@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { spinner } from "../assets/assets";
+import { spinner } from "../assets/images/images";
 
 export class loader extends Component {
   render() {
